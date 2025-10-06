@@ -218,18 +218,44 @@
                     <a href="#kontak" class="block px-3 py-1 text-sm text-gray-600 hover:text-blue-600 mobile-nav-link">Kontak, Medsos & G-Maps </a>
                 </div>
             </div>
-            <div x-data="{ open: false }" class="border-b border-gray-100">
-                <button @click="open = !open" class="w-full text-left flex justify-between items-center px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">
-                    Layanan
-                    <svg :class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div x-show="open" class="pl-6 pb-2 space-y-1 transition-all duration-300 ease-in-out">
-                    <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Cek PBB Online</a>
-                    <a href="https://edukcapil.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Edukcapil</a>
-                    <a href="https://infoloker.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Info Loker</a>
-                    <a href="#layanan" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 mobile-nav-link">Kecamatan</a>
-                    <a href="https://tangkar.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pengaduan Publik</a>
+                           <div class="relative group">
+                    <a href="#layanan" class="text-blue-600 border border-blue-600 rounded-lg px-3 py-1.5 font-semibold hover:bg-blue-50 transition-colors text-xs flex items-center whitespace-nowrap">
+                        Layanan Kecamatan
+                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    
+                    <div class="absolute z-50 hidden group-hover:block w-56 bg-white rounded-lg shadow-xl py-2 mt-0.5 border border-gray-100">
+                         <a href="#layanan" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600 nav-link">Administrasi Kependudukan</a>
+
+ <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pengaduan</a>
+
+ <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Register Tamu</a>
+
+ <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Survey Kepuasan Masyarakat</a>
+
+
+ <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Kritik & Saran</a>
+ </div>
                 </div>
+
+
+<div class="relative group">
+                    <a href="#layanan" class="text-blue-600 border border-blue-600 rounded-lg px-3 py-1.5 font-semibold hover:bg-blue-50 transition-colors text-xs flex items-center whitespace-nowrap">
+                        Layanan Pemerintahan
+                        <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    
+                    <div class="absolute z-50 hidden group-hover:block w-56 bg-white rounded-lg shadow-xl py-2 mt-0.5 border border-gray-100">
+   <a href="https://api.whatsapp.com/send/?phone=6281114091409&text&type=phone_number&app_absent=0 target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">PAK HAJI</a>
+                          <a href="https://cekpbb.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Cek PBB Online</a>
+
+
+ <a href="https://edukcapil.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Edukcapil</a>
+
+ <a href="https://infoloker.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Info Loker</a>
+
+ <a href="https://tangkar.karawangkab.go.id/" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Pengaduan Publik</a>
+</div>
             </div>
             
             <a href="#berita-pengumuman" class="mobile-nav-link block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Berita & Info</a>
